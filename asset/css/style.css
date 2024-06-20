@@ -1,0 +1,145 @@
+body {
+	background: #142335;
+    background: linear-gradient(to bottom, #2a475e, #121f2f) fixed;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #d5ecff;
+}
+
+header .logo {
+	display: block;
+	margin: 40px 0 50px 0;
+}
+
+
+.nav {
+	background-color: #1b2838;
+	border: 1px solid #4a7394;
+	padding: 25px 20px;
+	font-weight: 500;
+	margin-bottom: 35px;
+}
+
+.nav .nav-title {
+	text-transform: uppercase;
+	color: #75c1ff;
+	display: block;
+	margin-bottom: 25px;
+}
+
+.nav ul {
+	padding: 0;
+	margin: 0;
+}
+
+.nav ul li {
+	list-style: none;
+}
+
+.nav ul li a {
+	color: #d5ecff;
+	transition: 0.3s;
+}
+
+.nav ul li a:hover {
+	color: #3c9eec;
+}
+
+.nav .current a {
+	color: #3c9eec;
+}
+
+@media only screen and (max-width: 64.0625em) {
+	.nav ul li {
+		display: inline-block;
+		margin-right: 30px; 
+		line-height: 2.0;
+	}
+}	
+
+.item {
+	margin-bottom: 10px;
+	padding: 10px;
+	background-color: #1d2c3d;
+	transition: 0.3s;
+	color: #d5ecff;
+	font-weight: 300;
+	position: relative;
+	display: block;
+	min-height: 150px;
+}
+
+.item .price {
+	font-size: 16px;
+	font-weight: 500;
+	color: #74c1ff;
+	transition: 0.3s;
+	margin-top: 55px;
+}
+
+.item .title, h2, .reveal-modal .price {
+	font-size: 18px;
+	font-weight: 500;
+	color: #75c1ff;
+	transition: 0.3s;
+}
+
+.item .arrow {
+	width: 12px;
+	height: 23px;
+	background: url('https://coddyshop.ru/../img/arrow.png') no-repeat;
+	transition: 0.3s;
+	margin-top: 55px;
+}
+
+.item:hover {
+	background-color: #92b2c8;
+	color: #1b2838;
+}
+
+.item:hover .title, .item:hover .price {
+	color: #123b6e;
+}
+
+.item:hover .arrow {
+	background: url('https://coddyshop.ru/../img/arrow-hover.png') no-repeat;
+}
+
+@media only screen and (max-width: 40.0625em) {
+	.item .title, .reveal-modal h2  {
+		margin-top: 10px;
+		text-align: center;
+	}
+	.reveal-modal .price {
+		text-align: center;
+	}	
+}
+
+.reveal-modal {
+	background-color: #1b2838;
+	border: none;
+	font-weight: 300;
+	padding-top: 100px;
+}
+
+.reveal-modal img {
+	margin-top: 10px;
+}
+
+.reveal-modal .price {
+	padding-bottom: 10px;
+	padding-top: 5px;
+}
+
+.close-reveal-modal {
+	width: 31px;
+	height: 30px;
+	background: url('https://coddyshop.ru/../img/icon_close.png') no-repeat;
+	transition: 0.3s;
+	margin-top: 10px;
+}
+
+.close-reveal-modal:hover {
+	opacity: 0.5;
+}
+
